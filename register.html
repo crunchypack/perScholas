@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,23 +10,26 @@
             padding: .4%;
             width: 50%;
         }
-        form label{
+
+        form label {
             padding: auto;
             margin-right: 2%;
         }
-        form input{
+
+        form input {
             margin: 10px 1%;
         }
-        form .email{
+
+        form .email {
             margin-right: 3.5%;
         }
-
     </style>
     <title>Register</title>
 </head>
+
 <body>
     <header>
-        <a href="#"><img src="Logo.png" alt="IMG"/></a>
+        <a href="#"><img src="Logo.png" alt="IMG" /></a>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -39,27 +43,32 @@
         <h1>Register Page</h1>
         <form>
             <fieldset>
-            <label for="fname">First Name</label>
-            <input type="text" name="fname" id="fname" placeholder="Enter Your First Name" required/> <br>
-            <label for="lname">Last name</label>
-            <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name" required /> <br>
-            <label for="email" class="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter Your Email" required> <br>
-            <label for="pass">Password</label>
-            <input type="password" name="pass" id="pass" placeholder="Enter Your Password" onkeyup="confirm()" required> <br>
-            <label for="conf">Confirm Password</label> 
-            <input type="password" name="conf" id="conf" placeholder="Confirm Your Password" onkeyup="confirm()" required><span id="msg"></span> <br>
-            <label >Gender</label>
-            <input type="radio" name="gender"  value="Female" id="genChoise2"><label for="genChoice2">Female</label>
-            <input type="radio" name="gender" value="Male" id="genChoice1"><label for="genChoice1">Male</label>
-            <input type="radio" name="gender" value="Other" id="genChoise3"><label for="genChoice3">Other</label><br>
-            <label for="dob">Date of birth</label>
-            <input type="date" name="dob" id="dob"> <br>
-            <label>Habits</label>
-            <input type="checkbox" name="habits" id="sport" value="sport"> <label for="sport">You like sports</label>
-            <input type="checkbox" name="habits" id="food" value="food"> <label for="food">You like to eat</label>
-            <input type="checkbox" name="habits" id="sleep" value="sleep"> <label for="sleep">You like to sleep</label> <br>
-            <input type="submit" value="Register">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" placeholder="Enter Your First Name" required /> <br>
+                <label for="lname">Last name</label>
+                <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name" required /> <br>
+                <label for="email" class="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required> <br>
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" placeholder="Enter Your Password" onkeyup="confirm()"
+                    required> <br>
+                <label for="conf">Confirm Password</label>
+                <input type="password" name="conf" id="conf" placeholder="Confirm Your Password" onkeyup="confirm()"
+                    required><span id="msg"></span> <br>
+                <label>Gender</label>
+                <input type="radio" name="gender" value="Female" id="genChoise2"><label for="genChoice2">Female</label>
+                <input type="radio" name="gender" value="Male" id="genChoice1"><label for="genChoice1">Male</label>
+                <input type="radio" name="gender" value="Other" id="genChoise3"><label
+                    for="genChoice3">Other</label><br>
+                <label for="dob">Date of birth</label>
+                <input type="date" name="dob" id="dob"> <br>
+                <label>Habits</label>
+                <input type="checkbox" name="habits" id="sport" value="sport"> <label for="sport">You like
+                    sports</label>
+                <input type="checkbox" name="habits" id="food" value="food"> <label for="food">You like to eat</label>
+                <input type="checkbox" name="habits" id="sleep" value="sleep"> <label for="sleep">You like to
+                    sleep</label> <br>
+                <input type="submit" value="Register">
             </fieldset>
         </form>
         <p>Member already? <a href="login.html">Log in here</a></p>
@@ -67,15 +76,16 @@
 </body>
 <script>
 
-var confirm = function() {
-  if (document.getElementById('pass').value ==
-    document.getElementById('conf').value) {
-    document.getElementById('msg').style.color = 'green';
-    document.getElementById('msg').innerHTML = 'Password Matches';
-  } else {
-    document.getElementById('msg').style.color = 'red';
-    document.getElementById('msg').innerHTML = 'Password must match';
-  }
-}
+    var confirm = function () {
+        if (document.getElementById('pass').value ==
+            document.getElementById('conf').value) {
+            document.getElementById('msg').style.color = 'green';
+            document.getElementById('msg').innerHTML = 'Password Matches';
+        } else {
+            document.getElementById('msg').style.color = 'red';
+            document.getElementById('msg').innerHTML = 'Password must match';
+        }
+    }
 </script>
+
 </html>
