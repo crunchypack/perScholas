@@ -1,0 +1,35 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(66, 61, 61);
+}
+#container {
+  background-color: #fc354a;
+  color: white;
+  margin: 5px auto;
+  text-align: center;
+  width: 60%;
+  padding: 5%;
+}
+.form {
+  width: 100%;
+}
+.field {
+  display: block;
+  width: 100%;
+  padding: 0.5% 1%;
+  margin: 1% 0;
+  background-color: #ca2a3b;
+  color: white;
+  border: none;
+}
+::placeholder {
+  color: white;
+  opacity: 0.9;
+}
+.btn {
+  height: 20%;
+  border: 2px solid gray;
+  background-color: white;
+  color: #ca2a3b;
+}
