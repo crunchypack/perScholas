@@ -33,3 +33,9 @@ body {
   background-color: white;
   color: #ca2a3b;
 }
+.animated-box {
+  width: 200px;
+  height: 200%;
+  background-color: aquamarine;
+  animation: flash 2s ease 1s 3 alternate both;
+}
