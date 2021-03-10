@@ -1,6 +1,6 @@
 function square() {
   let valid = true;
-  let num = prompt("Enter number: ");
+  let num = parseInt(prompt("Enter number: "));
   do {
     if (num < 0 || num > 100 || num == null || num == "" || isNaN(num)) {
       valid = true;
@@ -8,30 +8,24 @@ function square() {
       valid = false;
       continue;
     }
-    num = prompt("Please re-enter");
+    num = parseInt(prompt("Please re-enter"));
   } while (valid);
   console.log(num * num);
 }
 function interval() {
   let valid = true;
-  let lower = prompt("Enter lower number: ");
-  let upper = prompt("Enter upper number");
+  let lower = parseInt(prompt("Enter lower number: "));
+  let upper = parseInt(prompt("Enter upper number"));
   let interval = new Array();
   do {
-    if (
-      lower > upper ||
-      lower == null ||
-      upper == null ||
-      isNaN(lower) ||
-      isNaN(upper)
-    ) {
+    if (lower > upper) {
       valid = true;
     } else {
       valid = false;
       continue;
     }
-    lower = prompt("Please re-enter lower: ");
-    upper = prompt("Please re-enter upper: ");
+    lower = parseInt(prompt("Please re-enter lower: "));
+    upper = parseInt(prompt("Please re-enter upper: "));
   } while (valid);
   for (let i = lower; i < upper; i++) {
     interval.push(i);
