@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Wars</title>
+</head>
+
+<body>
+    <script>
+        var sum_of_square = {
+            first: 0,
+            second: 0,
+            square: function () {
+                this.result = ((this.first * this.first) + (this.second * this.second));
+                return this.result;
+            }
+        }
+        sum_of_square.first = 2;
+        sum_of_square.second = 3;
+        let FR = sum_of_square.square();
+        console.log(FR);
+        console.log(sum_of_square);
+        function isNumber(input) {
+            let bool = false;
+            for (let i = 0; i < input.length; i++) {
+                if (!isNaN(parseInt(input[i]))) {
+                    bool = true;
+                    break;
+                }
+            }
+            return bool;
+        }
+        function convertToNumber(input) {
+            return parseInt(input);
+        }
+        function smaller() {
+
+        }
+        let bool = isNumber();
+        let number = convertToNumber("78");
+        if (!isNaN(number)) {
+            console.log(number);
+        } else {
+            console.log("convert failed");
+        }
+        console.log(bool);
+    </script>
+</body>
+
+</html>
